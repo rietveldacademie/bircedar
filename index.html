@@ -106,6 +106,8 @@ html {
         }
     }
 
+    
+
     @-webkit-keyframes heyyo2{
         0% {
             opacity: 0%;
@@ -399,7 +401,7 @@ html {
     </div>
         </div>
         <div class="menu" id="menu">  
-            <a class="menuelement" id="menuelement" href="aboutpage.html">about ∰ contact</a>
+            <a class="menuelement" id="menuelement" href="javascript:delay('aboutpage.html')">about ∰ contact</a>
             <div class="menudivs"></div>
             <a class="menuelement" href="projectspage.html">projects</a>
             <div class="menudivs"></div>
@@ -416,6 +418,12 @@ html {
     <p class="animationwarning" id="warn">Watch out for a surprise.</p>
 
     <p class="credit">instagram <a class="creditlink" href="https://www.instagram.com/bircedar/"><em>@bircedar</em> </a>  </p>
+
+    <script>
+        function delay (URL) {
+    setTimeout( function() { window.location = URL }, 2000 );
+}
+    </script>
 
 </body>
 </html>
