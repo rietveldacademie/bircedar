@@ -56,9 +56,6 @@ html {
 
     }
 
-    .menuelement:active {
-    }
-
     .mainelement {
         margin-left: 15em;
         margin-top: 1.7em;
@@ -270,9 +267,10 @@ html {
     .credit {
         transform: rotate(270deg);
         position: fixed;
-        bottom: 85px;
-        right: -40px;
+        bottom: 120px;
+        right: -75px;
         transition: 3s;
+        font-size: 8pt;
     }
     
     .creditlink {
@@ -281,7 +279,7 @@ html {
     }
 
     .creditlink:hover {
-        color: #ffffff;
+        color: #8a8888;
         border: solid #90332c 1pt;
         background-color:  #90332c;
         text-decoration: none;
@@ -318,9 +316,18 @@ html {
 
 @media screen and (max-width: 600px) {
     .mainphoto {
-        top: 100px;
-        width: 61%;
+        top: 86px;
+        width: 64%;
         right: 20px;
+    }
+
+    .credit {
+        transform: rotate(270deg);
+        position: fixed;
+        bottom: 120px;
+        right: -65px;
+        transition: 3s;
+        font-size: 8pt;
     }
 
     .logo2 {
@@ -371,14 +378,6 @@ html {
     .animationwarning {
         color: transparent;
     }
-
-    .credit {
-        color: transparent;
-    }
-
-    .creditlink {
-        color: transparent;
-    }
     
 }
     
@@ -413,7 +412,7 @@ html {
     </div>
         </div>
         <div class="menu" id="menu">  
-            <a class="menuelement" id="menuelement" href="javascript:delay('aboutpage.html')">about ∰ contact</a>
+            <a class="menuelement" id="menuelement"  href="javascript:delay('aboutpage.html')">about ∰ contact</a>
             <div class="menudivs"></div>
             <a class="menuelement" href="javascript:delay('projectspage.html')">projects</a>
             <div class="menudivs"></div>
@@ -429,7 +428,7 @@ html {
 
     <p class="animationwarning" id="warn">Watch out for a surprise.</p>
 
-    <p class="credit">instagram <a class="creditlink" href="https://www.instagram.com/bircedar/"><em>@bircedar</em> </a>  </p>
+    <p class="credit">copyright © all rights reserved. <a class="creditlink" href="https://www.instagram.com/bircedar/"><em></em> </a>  </p>
 
     <script class="delayscript">
         function delay (URL) {
