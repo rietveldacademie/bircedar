@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>books</title>
+    <title>document</title>
     <link rel="icon" href="birceicon.png" type="image/icon type">
 </head>
 <style>
 
 
 html {
-        cursor: url(bookscursor.png), auto;
+        cursor: url(projectscursor.png), auto;
+        cursor: pointer url(projectscursor.png);
     }
 
     @font-face {
@@ -24,11 +25,11 @@ html {
     }
 
     body {
+        background: url();
         background-size:  90em;
         background-repeat: no-repeat;
-        background-color: #f5f1f1;
         background-attachment: fixed;
-        
+        background-color: #f5f1f1;
     }
 
     .maingrid {
@@ -55,14 +56,12 @@ html {
         position: fixed;
         outline: solid rgb(255, 255, 255);
         outline-width: 0.6pt;
-        image-orientation: inherit;
     }
 
     .mainelement {
         margin-left: 15em;
         margin-top: 1.7em;
         transition: width 2s, height 4s;
-
     }
 
     .menu {
@@ -75,13 +74,9 @@ html {
         bottom: 95px;
     }
 
-    img {
-    image-orientation: from-image;
-}
-
     .menuelement:hover {
         color: transparent;
-        -webkit-text-stroke-color: #887ab2;
+        -webkit-text-stroke-color: #a9adb8;
         -webkit-text-stroke-width: 1.5px;
     }
 
@@ -91,77 +86,80 @@ html {
 
     a {
         text-decoration: none;
-        color:  #cddeeb;
-
-    }
-
-    .button:hover {
-        cursor: pointer;
-        background-color: #887ab2;
-        border: solid #887ab2 1pt;
-        -webkit-text-fill-color: rgb(255, 255, 255);
+        color:  #7f8d6d;
 
     }
 
     .store {
-        -webkit-text-stroke-color: #cddeeb;
+        -webkit-text-stroke-color: #7f8d6d;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-fill-color: transparent;
         letter-spacing: 2px;
     }
 
     .store:hover {
-        -webkit-text-stroke-color: #887ab2;
+        -webkit-text-stroke-color: #a9adb8;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-fill-color: transparent
     }
 
     .selectedmenuelement {
-        -webkit-text-stroke-color: #887ab2;
+        -webkit-text-stroke-color: #a9adb8;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-fill-color: transparent;
     }
 
     .righttopheader {
         float: right;
-        color: #887ab2;
-        margin-left: 99.5%;
+        color: #a9adb8;
+        margin-left: 78.5%;
         width: 300px;
         font-family: vanished;
         font-size: 17pt;  
         margin-top: 12px; 
         position: fixed;
-        right: -177px;
+        right: -130px;
     }
 
     p {
         color: rgb(0, 0, 0);
+        position: relative;
         font-family: andale mono;
-        text-align: left;
+        margin-top: 55px;
+        text-align: justify;
+        text-decoration: underline;
     }
 
+    .seperatordiv {
+        height: 1px;
+    }
+
+    .seperatordiv2 {
+        margin-top: 1px;
+    }
 
     .insidetext {
         margin-top: 0;
-        text-align: left;
+        text-align: justify;
     }
 
     .insidetext2 {
         margin-top: -14px;
     }
     .insideheader {
-        margin-top: 10px;
-        text-decoration: underline;
-    }
-
-    .insideheader2 {
-        margin-top: 50px;
-        text-decoration: underline;
+        text-decoration: underline; 
+        width: 100%;
     }
 
     .maintext {
-        left: 200px;
-        position: sticky;
+        position: relative;
+        width: 50%;
+        left: 52%;
+    }
+
+    .maintext2 {
+        text-decoration: underline;
+        margin-top: 80px;scroll-margin-bottom: ;
     }
 
     .smallerseperator {
@@ -170,24 +168,6 @@ html {
         margin: 0;
     }
 
-    /* .contactbox { */
-        width: 39.1%;
-        height: 10em;
-        margin-left: 37.3%;
-        outline: solid white;
-        outline-width: 1.5px;
-    }
-
-    input[type=text], select, textarea, ::placeholder{
-  width: 400%;
-  padding: 12px;
-  border: 1px solid rgb(0, 0, 0);
-  margin-top: 6px;
-  margin-left: 400px;
-  margin-bottom: 16px;
-  resize: vertical;
-  text-decoration: yellow;
-}
 
 .contactbox {
     margin-top: 20px;
@@ -211,97 +191,131 @@ html {
     font-family: andale mono;
 }
 
-@-webkit-keyframes entranceanimation {
+@-webkit-keyframes entranceanimation  { 
     0% {
         opacity: 0;
+        
     }
-
+ 
     100% {
         opacity: 1;
 
     }
 }
 
-@-webkit-keyframes entranceanimation2 {
-    0% {
-        opacity: 0;
+.thintext {
+        animation: entranceanimation 2s 1;
     }
 
-
-
-    100% {
-        opacity: 1;
-
-    }
+.secondline {
+    margin-top: 20px
 }
 
-    .maindiv {
-        margin-left: 37%;
-        column-width: ;
-        column-gap: 0px;
-        margin-top: 3.5%;
-        width: 40%;
+.event {
+    margin-top: -15px;
+    float: left;
+}
+
+.event2 {
+    float: left;
+    margin-top: -10px;
+}
+
+
+.eventplace {
+	float: right;
+    margin-top: -34px;
+}
+
+.eventplace2 {
+	float: right;
+    margin-top: -15px;
+}
+
+.eventplace3 {
+    float: right;
+    margin-top: -57.5px;
+    margin-bottom: 20px;
+}
+
+.eventplace4 {
+    float: right;
+    margin-top: -76.5px;
+    margin-bottom: 20px;
+}
+
+
+.hey {
+    margin-bottom: 10px;
+}
+
+.event2 {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: -14px;
+}
+
+ul {
+    opacity: 0;
+}
+
+@media (min-width: 1450px;) {
+    p {
+        margin-left: 50%;
+    }
+
+}
+
+.credit {
+        transform: rotate(270deg);
+        position: fixed;
+        right: 250px;
+        bottom: 125px;
+        transition: 3s;
+    }
+    
+    .creditlink {
+        color: #90332c;
+    }
+
+    .creditlink:hover {
+        color: #90332c;
+        text-decoration: underline;
+    }
+
+.maindiv {
         stroke-width: 1pt;
         animation: entranceanimation 3s 1;
+        }
         
-
-    }
-
-    .image1 {
-        display: inline-block;
-        width: 100%;
-        margin-left: -10px;
-        transition: 3s;
-
-    }
-
-    .image2 {
-        width: 100%;
-        margin-left: -10px;
-        transition: 3s;
-    }
-
-    
-
-    .button {
-        border: solid rgb(0, 0, 0) 1pt;
-        padding: 1pt;
-        width: 100%;
-        text-decoration: none;
-    }
-
-    .enddiv {
-        height: 3%;
-    }
-
-    .image2:hover {
-        filter: blur(100px);
-
-    }
-
-    .image1:hover {
-        filter: blur(100px);
-    }
-
-
-#slide {
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
-    width: 40%;
+table {
+  font-family: andale mono;
+  border-collapse: collapse;
+  font-size: 1rem;
+  vertical-align: top;
 }
 
-@-webkit-keyframes slide {
-    100% { left: 0; }
-    
+td, th, tr {
+  text-align: left;
+  padding-bottom:5pt;
+  vertical-align: top;
+  padding-right: 200px;
 }
 
-@keyframes slide {
-    100% { left: 0; }
+.transparent {
+    color: transparent;
+    text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
+.tableee {
+    float: right;
+    position: relative;
+    width: 50%;
+    margin-left: 840px;
+    margin-top: 15px;
+    right: 500px;}
+
+    @media screen and (max-width: 500px) {
     .mainphoto {
         top: 100px;
         width: 62%;
@@ -371,7 +385,6 @@ html {
     
     .righttopheader {
         float: right;
-        color: #887ab2;
         margin-left: 90.5%;
         width: 100%;
         font-family: vanished;
@@ -528,12 +541,9 @@ html {
     top: 80.1%;
     animation: entranceanimation2 7s 1 forwards;
 }
-
-
    
 .righttopheader {
         float: right;
-        color: #887ab2;
         margin-right: -80px;
         width: 100%;
         font-family: vanished;
@@ -548,10 +558,20 @@ html {
         text-decoration: none;
     }
 
+    .tableee {
+    float: left;
+    position: relative;
+    width: 450px;
+    top: 75px;
+    margin-left: 330px;
+    
+    }
+
 
     .enddiv {
-    height: 320px;
+    height: 350px;
 }
+
     }
 
 }
@@ -562,51 +582,45 @@ html {
 <body>
 
     <div class="righttopheader">
-        books
+        projects
     </div>
 
     <div class="maingrid">
-        <div class="title"><a href="index.html"><img class="titleimage" src="logo4.png" alt="righttopheader" ></a></div>
-        <div class="mainelement"><img class="mainphoto" src="sculpture44.jpg" alt=""></div>
+        <div class="title"><a href="index.html"><img class="titleimage" src="logo3.png" alt="righttopheader" ></a></div>
+        <div class="mainelement"><img class="mainphoto" src="sculpture3.jpg" alt=""></div>
         <div class="three">
      
         </div >
         <div class="menu">  
             <a class="menuelement" href="aboutpage.html" id="toprightheader">about ∰ contact</a>
             <div class="menudivs"></div>
-            <a class="menuelement" href="projectspage.html">projects</a>
+            <a class="selectedmenuelement" href="projectspage.html">projects</a>
             <div class="menudivs"></div>
-            <a class="selectedmenuelement" href="bookspage.html">books</a>
+            <a class="menuelement" href="bookspage.html">books</a>
             <div class="menudivs"></div>
             <a class="menuelement" href="imagespage.html">images</a>
             <div class="menudivs"></div>
             <a class="store" href="store.html">store</a>
         </div>
 
-        <div class="maindiv">
-            <p class="insideheader">Before Killing the Day I Kissed The Window</p>
-            <img class="image1" src="beforekillingcover.png" alt="">
-            <div></div>
-             <p ><em>Before Killing the Day I Kissed The Window </em>is a short novel that depicts the one-day journey of a first-time commuter who mysteriously ends up
-                 in a circle of events where there is no exit, neither from the past nor the future.
-                <div></div>
-                <a href="beforekillingpage.html" > <p class="button">See Details</p> </a>
 
-            <p class="insideheader2">I want it, So I postpone</p>
-            <div class="iwantitcover">
-               <img class="image2" src="iwantitcover.png" alt=""> 
-            </div>
-            <div></div>
-            <p class="thintext"><em>IWSIP: No-Man’s Poetry</em> is an illustrated poetry book of thirty poems written in English.
-                <div></div>
-                <a href="iwantitpage.html" > <p class="button">See Details</p> </a>
-                
-                <div class="enddiv"></div>
+        <svg class="tableee" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{stroke:#000000;stroke-width:0.6;stroke-miterlimit:10;}
+	.st2{font-family:'AndaleMono';}
+	.st3{font-size:17px;}
+</style>
+<rect x="97.42" y="42.48" class="st0" width="391.64" height="830.64"/>
+<text transform="matrix(1 0 0 1 97.4168 54.1959)"><tspan x="0" y="0" class="st1 st2 st3" style="text-decoration: underline;">Group Exhibitions / Publications / </tspan><tspan x="0" y="20.4" class="st1 st2 st3" style="text-decoration: underline;">Readings</tspan><tspan x="0" y="61.2" class="st1 st2 st3">2020</tspan><tspan x="0" y="84.2" class="st1 st2 st3">Graduation Show</tspan><tspan x="0" y="124.6" class="st1 st2 st3">2019</tspan><tspan x="0" y="144.6" class="st1 st2 st3">Letter “Z”</tspan><tspan x="0" y="187.6" class="st1 st2 st3">Letter “Z”</tspan><tspan x="0" y="250.6" class="st1 st2 st3">Letter “Z”</tspan><tspan x="0" y="296.6" class="st1 st2 st3">Take a walk on</tspan><tspan x="0" y="316.6" class="st1 st2 st3">the wild side/</tspan><tspan x="0" y="336.6" class="st1 st2 st3">Uncut</tspan><tspan x="0" y="377" class="st1 st2 st3">2018</tspan><tspan x="0" y="397" class="st1 st2 st3">Hold Me Now/</tspan><tspan x="0" y="417" class="st1 st2 st3">Uncut</tspan><tspan x="0" y="440" class="st1 st2 st3">Museum in Bloom</tspan><tspan x="0" y="529.4" class="st1 st2 st3" style="text-decoration: underline;">Solo Publications</tspan><tspan x="0" y="570.2" class="st1 st2 st3">2020</tspan><tspan x="0" y="593.2" class="st1 st2 st3">Before Killing</tspan><tspan x="0" y="616.2" class="st1 st2 st3">the Day, I Kissed</tspan><tspan x="0" y="639.2" class="st1 st2 st3">the Window</tspan><tspan x="0" y="685.2" class="st1 st2 st3">2019</tspan><tspan x="0" y="708.2" class="st1 st2 st3">I Want It,</tspan><tspan x="0" y="731.2" class="st1 st2 st3">So I Just Postpone</tspan></text>
+<rect x="328.98" y="102.37" class="st0" width="410.14" height="768.76"/>
+<text transform="matrix(1 0 0 1 328.9833 137.0801)"><tspan x="0" y="0" class="st1 st2 st3">Gerrit Rietveld </tspan><tspan x="0" y="23" class="st1 st2 st3">Academie</tspan><tspan x="0" y="63.4" class="st1 st2 st3">live reading, </tspan><tspan x="0" y="83.4" class="st1 st2 st3">Van Gogh Museum</tspan><tspan x="0" y="106.4" class="st1 st2 st3">live reading, Launch </tspan><tspan x="0" y="126.4" class="st1 st2 st3">of Rietveld Journal,</tspan><tspan x="0" y="146.4" class="st1 st2 st3">Rietveld Pavillion</tspan><tspan x="0" y="167.4" class="st1 st2 st3">published in Rietveld</tspan><tspan x="0" y="187.4" class="st1 st2 st3">Journal, 1st issue</tspan><tspan x="0" y="213.4" class="st1 st2 st3">Stedelijk Museum,</tspan><tspan x="0" y="233.4" class="st1 st2 st3">Amsterdam</tspan><tspan x="0" y="314.4" class="st1 st2 st3">Stedelijk Museum,</tspan><tspan x="0" y="334.4" class="st1 st2 st3">Amsterdam</tspan><tspan x="0" y="357.4" class="st1 st2 st3">Frans Hals Museum,</tspan><tspan x="0" y="380.4" class="st1 st2 st3">Haarlem</tspan><tspan x="0" y="403.4" class="st1 st2 st3">Amsterdam</tspan><tspan x="0" y="509.4" class="st1 st2 st3">Amsterdam</tspan><tspan x="0" y="625.4" class="st1 st2 st3">Amsterdam</tspan></text>
+</svg>
 
 
-                
-        </div>
-    
-                            
+
+<div class="enddiv"></div>
+</table>
 </body>
 </html>
