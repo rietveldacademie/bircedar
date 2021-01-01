@@ -449,6 +449,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         right: 20px;
         animation: menuanimation2 1 5s forwards;
         animation-delay: 1s;
+        mix-blend-mode: difference;
+        z-index: -10;
     }
 
     .menu {
@@ -507,7 +509,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     .righttopheader {
         float: right;
         color: #acb55c;
-        margin-left: 90.5%;
+        margin-right: -20px;
         width: 100%;
         font-family: vanished;
         font-size: 17pt;  
@@ -527,7 +529,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
         margin-top: 80%;
         text-align: left;
         mix-blend-mode: darken;
-        font-weight: bold
+        font-weight: bold;
+        z-index: 950;
     }
 
     .fcf-body {
@@ -544,6 +547,8 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     margin-left: -164.1%;
     margin-bottom: 10.1%;
 }
+
+
 
 }
 
@@ -599,8 +604,7 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
                             English Studies BA, Malmö University 
                                     SWE</p> 
                                     <p></p>
-                             
-                        </p> 
+                            
 
                         <p class="insideheader">Contact</p>   
                         <div class="fcf-body">
