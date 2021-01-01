@@ -62,14 +62,14 @@ html {
     }
 
 
-    .maingrid:hover #sculpt{
+    .maingrid:hover #sculpt,     .maingrid:active #sculpt,     .maingrid:focus #sculpt{
         width: 900%;
         height: 90%;
         filter: blur(200px) saturate(100);
 
     }
 
-    .maingrid:hover #log{ */
+    .maingrid:hover #log,    .maingrid:focus #log    .maingrid:active #log { */
         width: 300px;
         height: 90%;
        width: auto;
@@ -175,15 +175,15 @@ html {
         }
     }
 
-    .maingrid:hover #menuelement{
+    .maingrid:hover #menuelement,     .maingrid:active #menuelement,     .maingrid:focus #menuelement{
         animation: heyyo5 1 7s no-repeat forwards;
     }
 
-    .maingrid:hover .logo2{
+    .maingrid:hover .logo2,   .maingrid:focus .logo2,   .maingrid:active .logo2{
         animation: heyyo4 1 7s forwards;
     }
 
-    .maingrid:hover .menu{
+    .maingrid:hover .menu, .maingrid:focus .menu, .maingrid:active .menu{
         margin-bottom: 18.4em;
         animation: heyyo6 1 6s forwards;
     }
@@ -311,7 +311,7 @@ html {
 }
 
 
-@media screen and (max-height: 750px) {
+@media screen and (max-height: 600px) {
     .mainphoto {
         top: 100px;
         width: 61%;
@@ -322,7 +322,7 @@ html {
         width: 50%;
     }
 
-    .maingrid:hover .menu {
+    .maingrid:hover .menu, .maingrid:focus .menu, .maingrid:active .menu {
         margin-bottom: 8.5em;
         animation: heyyo6 1 6s forwards;
     }
