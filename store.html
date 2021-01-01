@@ -109,6 +109,7 @@ html {
         -webkit-text-stroke-color: #36aeac;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-fill-color: transparent;
+        z-index: 10;
     }
 
     .righttopheader {
@@ -272,6 +273,13 @@ html {
         filter: invert(100);
     }
 
+      
+    .image3:hover {
+        width: 145%;
+        filter: invert(100);
+    }
+
+
 
     .button {
         border: solid rgb(255, 255, 255) 1pt;
@@ -283,6 +291,9 @@ html {
 
     .button:hover {
         cursor: pointer;
+        background-color: #36aeac;
+        border: solid #36aeac 1pt;
+        -webkit-text-fill-color: black;
     }
 
     .enddiv {
@@ -339,6 +350,7 @@ html {
         right: 20px;
         animation: menuanimation2 1 5s forwards;
         animation-delay: 1s;
+        z-index: -10;
     }
 
     .menu {
@@ -476,21 +488,29 @@ html {
         width: 65%;
         text-decoration: none;
         -webkit-text-fill-color: white;
+        z-index: 20;
     }
 
 .image1:hover {
     filter: invert(100);
     width: 345px;
+    z-index: 900;
 }
 
 .image2:hover {
     filter: invert(100);
     width: 345px;
+    z-index: 900;
 }
 
 .image3:hover {
     filter: invert(100);
     width: 345px;
+    z-index: 900;
+}
+
+.menuelement {
+    z-index: -20;
 }
 
 }
@@ -508,17 +528,7 @@ html {
         <div class="three">
      
         </div >
-        <div class="menu">  
-            <a class="menuelement" href="aboutpage.html" id="toprightheader">about ∰ contact</a>
-            <div class="menudivs"></div>
-            <a class="menuelement" href="projectspage.html">projects</a>
-            <div class="menudivs"></div>
-            <a class="menuelement" href="bookspage.html">books</a>
-            <div class="menudivs"></div>
-            <a class="menuelement" href="imagespage.html">images</a>
-            <div class="menudivs"></div>
-            <a class="selectedmenuelement" href="store.html">store</a>
-        </div>
+        
 
         <div class="maindiv">
              <p class="insideheader2">Lick Your Forehead and Make a Body Move - Tee</p>
@@ -579,7 +589,17 @@ html {
         
                 <div class="enddiv"></div>
         </div>
-    
+    <div class="menu">  
+            <a class="menuelement" href="aboutpage.html" id="toprightheader">about ∰ contact</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="projectspage.html">projects</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="bookspage.html">books</a>
+            <div class="menudivs"></div>
+            <a class="menuelement" href="imagespage.html">images</a>
+            <div class="menudivs"></div>
+            <a class="selectedmenuelement" href="store.html">store</a>
+        </div>
                             
 </body>
 </html>
