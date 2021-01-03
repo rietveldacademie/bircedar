@@ -8,10 +8,6 @@
 </head>
 <style>
 
-html {
-        cursor: url(bookscursor.png), auto;
-    }
-
     @font-face {
         font-family: vanished;
         src: url(vanished.ttf);
@@ -23,7 +19,6 @@ html {
     }
 
     body {
-
         background-size:  90em;
         background-repeat: no-repeat;
         background-color: #f5f1f1;
@@ -31,7 +26,7 @@ html {
     }
 
     .maingrid {
-        display: grid;
+        display: grid flexbox;
         grid-template-columns: auto auto auto;
         grid-gap: 10px;
         position: absolute;
@@ -214,10 +209,10 @@ html {
 }
 
     .maindiv {
-        margin-left: 37%;
+        margin-left: 48.6%;
         column-width: ;
         column-gap: 0px;
-        width: 40%;
+        width: 32%;
         stroke-width: 1pt;
         margin-top: 3.5%;
         
@@ -237,61 +232,36 @@ html {
     }
 
     .image3 {
-        width: 102%;
-        margin-left: -px;
+        width: 98%;
+        margin-left: 5px;
         transition: width 2s;
     }
 
-     .image4 {
-        width: 102%;
-        margin-left: -px;
-        transition: width 2s;
-    }
-
-    .image5 {
-        width: 102%;
-        margin-left: -px;
-        margin-top: -20px;
-        transition: width 2s;
-    }
-
-    .image6 {
-        width: 102%;
-        margin-left: -px;
-        margin-top: -5px;
+    .image4 {
+        width: 99%;
+        margin-left: 5px;
         transition: width 2s;
     }
 
     .image1:hover {
         width: 150%;
-        height: auto;
     }
 
     .image2:hover {
         width: 150%;
-        height: auto;
     }
 
     .image3:hover {
         width: 150%;
-        height: auto;
     }
 
     .image4:hover {
         width: 150%;
-        height: auto;
     }
 
     .image5:hover {
         width: 150%;
-        height: auto;
     }
-
-    .image6:hover {
-        width: 150%;
-        height: auto;
-    }
-
 
     .button {
         border: solid white 1pt;
@@ -303,116 +273,14 @@ html {
         height: 3%;
     }
 
-    @media screen and (max-width: 500px) {
-    .mainphoto {
-        top: 100px;
-        width: 62%;
-        right: 20px;
-        animation: menuanimation2 1 5s forwards;
-        animation-delay: 1s;
-        z-index: 950;
+    .image5 {
+        width: 102%;
+        margin-left: -10px;
+        transition: width 2s;
     }
 
 
-    .maingrid {
-        margin-left: -160px;
-    }
-    .menu {
-        animation: menuanimation 1 5s forwards;
-    }
-
-    @-webkit-keyframes menuanimation {
-    0% {
-        opacity: 100%;
-    }
-
-    100% {
-        opacity: 60%;
-
-    }
-}
-
-@-webkit-keyframes menuanimation2 {
-    0% {
-        filter: blur(0);
-    }
-
-    100% {
-        filter: blur(30px);
-
-    }
-}
-
-.fcf-form-control3 {
-    display: block;
-    width: 85.5%;
-    height: 17px;
-    font-size: 10pt;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000000;
-    background-color: transparent;
-    background-clip: padding-box;
-    border: 1px solid #000000;
-    outline: none;
-    margin-left: 2.7%;
-}
-
-
-.titleimage {
-        width: 40%;
-        margin-left: 100px;
-        opacity: 150%;
-    }
-
-
-    .animationwarning {
-        color: transparent;
-    }
-
-    
-    .righttopheader {
-        float: right;
-        color: #887ab2;
-        margin-left: 90.5%;
-        width: 100%;
-        font-family: vanished;
-        font-size: 17pt;  
-        position: fixed;
-    }
-
-    .maintext {
-        position: relative;
-        animation: entranceanimation 3s 1;
-    }
-
-    p {
-        color: rgb(0, 0, 0);
-        font-family: andale mono;
-        width: 370%;
-        margin-left: -224%;
-        margin-top: 70%;
-        text-align: left;
-        mix-blend-mode: darken;
-        font-weight: bold
-    }
-
-    .fcf-body {
-    
-    font-family: andale mono;
-    font-size: 1rem;
-    font-family: andale mono;
-    color: #000000;
-    text-align: left;
-    background-color: transparent;
-    padding-top: -0px;
-    border: 1px solid #000000;
-    width: 199%;
-    margin-left: -184.1%;
-    margin-bottom: 10.1%;
-}
-
-@media screen and (max-height: 700px) {
+@media screen and (max-width: 500px) {
     .mainphoto {
         top: 100px;
         width: 62%;
@@ -468,9 +336,9 @@ html {
 
 
 .titleimage {
-        width: 38%;
+        width: 50%;
         opacity: 150%;
-        margin-left: 33%;
+        margin-left: 0%;
     }
 
 
@@ -501,26 +369,71 @@ html {
         column-width: ;
         column-gap: 0px;
         margin-top: 110px;
-        margin-left: 50px;
+        margin-left: 150px;
         width: 400px;
         stroke-width: 1pt;
 
     }
 
     .image1 {
-        width: 365px;
-        opacity: 100%;
-        transition: 30s;
-        margin-left: -152px;
-        z-index: 900;
+        width: 90%;
+        margin-top: 20px;
+        margin-left: -150px;
+        transition: filter 3s;
     }
 
-    .image2, .image3, .image4, .image6{
-        width: 365px;
-        opacity: 100%;
-        transition: 30s;
-        margin-left: -152px;
-        z-index: 900;
+
+    .image5 {
+        width: 90%;
+        margin-left: -150px;
+        transition: filter 3s;
+    }
+
+    .image2 {
+        width: 87.5%;
+        margin-left: -140px;
+        transition: filter 3s;
+    }
+
+    .image3 {
+        width: 86%;
+        margin-left: -140px;
+        transition: filter 3s;
+    }
+
+    .image4 {
+        width: 86.5%;
+        margin-left: -140px;
+        transition: filter 3s;
+    }
+
+    .image1:hover {
+        width: 90%;
+        filter: blur(20px);
+
+    }
+
+
+    .image2:hover {
+        width: 87.5%;
+        filter: blur(20px);
+    }
+
+
+    .image3:hover {
+        width: 86%;
+        filter: blur(20px);
+    }
+
+
+    .image4:hover {
+        width: 86.5%;
+        filter: blur(20px);
+    }
+
+    .image5:hover {
+        filter: blur(20px);
+        width: 90%;
     }
 
 .instruction {
@@ -550,47 +463,10 @@ html {
         text-decoration: none;
     }
 
-    .image5 {
-    width: 365px;
-        opacity: 100%;
-        transition: 30s;
-        margin-left: -152px;
-        margin-top: 0px;
-        z-index: 900;
-        padding-bottom: 50px;
-        }
-
-        .image3 {
-            padding-bottom: -2px;
-        }
-
-    .image6 {
-        width: 365px;
-        opacity: 100%;
-        transition: 30s;
-        margin-left: -152px;
-        margin-top: 1px;
-        z-index: 900;
-    }
-
-    .image7 {
-    width: 365px;
-        opacity: 100%;
-        transition: 30s;
-        margin-left: -152px;
-        margin-top: 400px;
-        z-index: 900;
-        }
-    }
-
-    .image1:hover, .image2:hover,     .image3:hover, .image4:hover,     .image5:hover, .image6:hover, .image7:hover {
-        width: 365px;
-        filter: blur(300px);
-    }
-
     .enddiv {
-    height: 270px;
+    height: 320px;
 }
+
 
 }
 
@@ -620,31 +496,27 @@ html {
         </div>
 
         <div class="maindiv">
-            <p class="thintext">
-                <p><em>Before Killing the Day I Kissed The Window</em> is a short novel that depicts the one-day journey of a first-time commuter who mysteriously ends up
-                    in a circle of events where there is no exit, neither from the past nor the future.</p>
-                <p>This project supplemented the core idea of my thesis as ‘a song’ to create reflections from
-                components of ‘lost’ things. The story evolved from a collection of fragments of poems,
-                manuscripts, and drawings, and metamorphosed into a book of crime-fiction. Photographs, artifacts,
-                sculptures, and excerpts later composed for the book are documented as photo-collages.</p> 
-                <div></div>
-                <p>The book is written as a dual-language book between English and Turkish.</p> 
-                <p>Silkscreen-printed.</p> 
-                <p>160 pages. 15x22 cm.</p> 
-                <p>English translation: Mark David Wyers</p> </p>
+           <p class="thintext"> <p><em>Before Killing the Day I Kissed The Window</em> is a short novel that depicts the one-day journey of a first-time commuter who mysteriously ends up
+            in a circle of events where there is no exit, neither from the past nor the future.</p>
+        <p>This project supplemented the core idea of my thesis as ‘a song’ to create reflections from
+        components of ‘lost’ things. The story evolved from a collection of fragments of poems,
+        manuscripts, and drawings, and metamorphosed into a book of crime-fiction. Photographs, artifacts,
+        sculptures, and excerpts later composed for the book are documented as photo-collages.</p> 
+        <div></div>
+        <p>The book is written as a dual-language book between English and Turkish.</p> 
+        <p>Silkscreen-printed.</p> 
+        <p>160 pages. 15x22 cm.</p> 
+        <p>English translation: Mark David Wyers</p> </p>
                 <img class="image1" src="beforekilling1.png" alt="">
-                <img class="image1" src="beforekilling2.png" alt="">
-                <img class="image4" src="before1.png" alt="">
-                <img class="image3" src="before10.png" alt="">
-                <img class="image3" src="before14.png" alt="">
-                <img class="image5" src="before11.png" alt="">
-
+                <img class="image5" src="beforekilling2.png" alt="">
+                <img class="image2" src="before1.png" alt="">
+                <img class="image2" src="before10.png" alt="">
+                <img class="image2" src="before14.png" alt="">
+                <img class="image3" src="before11.png" alt="">
                 <div class="enddiv"></div>
-
-
-
-
+    
                 
+   
         </div>
     
                             
