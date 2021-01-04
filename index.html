@@ -333,8 +333,16 @@ html {
 }
 }
 
+@media screen and (max-height: 600px){
 
-@media screen and (max-width: 600px) {
+    .maingrid:hover .menu, .maingrid:focus .menu, .maingrid:active .menu {
+        margin-bottom: 8.5em;
+        animation: heyyo6 1 6s forwards;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
     .mainphoto {
         top: 86px;
         width: 64%;
@@ -353,11 +361,6 @@ html {
 
     .logo2 {
         width: 50%;
-    }
-
-    .maingrid:hover .menu, .maingrid:focus .menu, .maingrid:active .menu {
-        margin-bottom: 8.5em;
-        animation: heyyo6 1 6s forwards;
     }
 
     @-webkit-keyframes heyyo6{
