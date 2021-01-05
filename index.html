@@ -53,7 +53,7 @@ html {
         position: fixed;
         outline: solid rgb(255, 255, 255);
         outline-width: 0.6pt;
-        transition: width 8s, filter 15s, height 6s;
+        transition: width 8s, filter 40s, height 6s;
         height: auto;
 
     }
@@ -209,6 +209,16 @@ html {
         -webkit-text-stroke-color: transparent;
     }
 
+    .menuelement:onmouse{
+        -webkit-text-fill-color: red;
+        -webkit-text-stroke-color: transparent;
+    }
+
+    .menuelement:active {
+        -webkit-text-fill-color: blue;
+    }
+
+
     .menudivs {
         height: 8px;
     }
@@ -363,6 +373,8 @@ html {
         width: 50%;
     }
 
+    
+
     @-webkit-keyframes heyyo6{
         0% {
             text-align: left;
@@ -435,8 +447,8 @@ html {
         heyyyyyy
     </div>
         </div>
-        <div class="menu" id="menu">  
-            <a class="menuelement" id="menuelement"  href="javascript:delay('aboutpage.html')">about ∰ contact</a>
+        <div class="menu" id="menu" >  
+            <a  class="menuelement"  id="menuelement" href="javascript:delay('aboutpage.html')" href="javascript:fade('aboutpage.html')">about ∰ contact</a>
             <div class="menudivs"></div>
             <a class="menuelement" href="javascript:delay('projectspage.html')">projects</a>
             <div class="menudivs"></div>
@@ -458,8 +470,26 @@ html {
     <script class="delayscript">
         function delay (URL) {
     setTimeout( function() { window.location = URL }, 7000 );
+   
 }
     </script>
 
+    <script class="fadescript">
+     $("#element").fadeOut(100);
+    </script>
+
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".menuelement").click(function(){
+    $(".menuelement").fadeOut(7000);
+    $(".store").fadeOut(7000);
+  });
+  $(".menuelement").click(function(){
+    $(".menulement").fadeIn();
+  });
+});
+</script>
 </html>
